@@ -90,7 +90,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -109,10 +109,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -145,7 +145,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
     </div>
 
                 </td>
@@ -162,7 +162,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>Categorias</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -275,6 +275,15 @@
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
                             &nbsp;
+                            WikiDoc
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/WikiDoc/react/">react</a></li>  <li class="file"><a href="/WikiDoc/reactTodo/">reactTodo</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
                             我的日记
                         </a>
                          <ul class="unstyled" id="tree" > 
@@ -293,7 +302,7 @@
                             &nbsp;
                             2021年
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-01/">Fri Jan 01 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-02/">Sat Jan 02 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-03/">Sun Jan 03 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-04/">Mon Jan 04 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-05/">Tue Jan 05 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-06/">Wed Jan 06 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-07/">Thu Jan 07 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-08/">Fri Jan 08 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-09/">Sat Jan 09 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-10/">Sun Jan 10 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-11/">Mon Jan 11 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-12/">Tue Jan 12 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-13/">Wed Jan 13 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-14/">Thu Jan 14 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-15/">Fri Jan 15 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-16/">Sat Jan 16 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-17/">Sun Jan 17 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-18/">Mon Jan 18 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-19/">Tue Jan 19 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-20/">Wed Jan 20 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-21/">Thu Jan 21 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-22/">Fri Jan 22 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-23/">Sat Jan 23 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-24/">Sun Jan 24 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-25/">Mon Jan 25 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-26/">Tue Jan 26 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-27/">Wed Jan 27 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-28/">Thu Jan 28 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-29/">Fri Jan 29 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-30/">Sat Jan 30 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-31/">Sun Jan 31 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-02-01/">Mon Feb 01 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-01/">Fri Jan 01 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-02/">Sat Jan 02 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-03/">Sun Jan 03 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-04/">Mon Jan 04 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-05/">Tue Jan 05 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-06/">Wed Jan 06 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-07/">Thu Jan 07 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-08/">Fri Jan 08 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-09/">Sat Jan 09 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-10/">Sun Jan 10 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-11/">Mon Jan 11 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-12/">Tue Jan 12 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-13/">Wed Jan 13 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-14/">Thu Jan 14 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-15/">Fri Jan 15 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-16/">Sat Jan 16 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-17/">Sun Jan 17 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-18/">Mon Jan 18 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-19/">Tue Jan 19 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-20/">Wed Jan 20 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-21/">Thu Jan 21 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-22/">Fri Jan 22 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-23/">Sat Jan 23 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-24/">Sun Jan 24 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-25/">Mon Jan 25 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-26/">Tue Jan 26 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-27/">Wed Jan 27 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-28/">Thu Jan 28 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-29/">Fri Jan 29 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-30/">Sat Jan 30 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-01-31/">Sun Jan 31 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-02-01/">Mon Feb 01 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  <li class="file"><a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2021%E5%B9%B4/2021-02-02/">Tue Feb 02 2021 00:00:00 GMT+0800 (China Standard Time)</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -369,6 +378,272 @@
 </aside>
             
             <section id="main">
+        <article id="post-我的日记/2020年/2020-06-07" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/">我的日记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/">2020年</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/diary/" rel="tag">diary</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-06-07/">
+            <time datetime="2020-06-07T15:00:00.000Z" itemprop="datePublished">2020-06-07</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-06-07/">Sun Jun 07 2020 00:00:00 GMT+0800 (China Standard Time)</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+        
+        
+            <h1 id="2020-06-07"><a href="#2020-06-07" class="headerlink" title="2020-06-07"></a>2020-06-07</h1><h2 id="辉夜"><a href="#辉夜" class="headerlink" title="辉夜~"></a>辉夜~</h2><p>这这这……</p>
+<p>事实上我可能是最近才知道feetdom 是啥意思的，要不然这集都看不懂啊。。。</p>
+<h2 id="Perl"><a href="#Perl" class="headerlink" title="Perl"></a>Perl</h2><p>真·从入门到放弃！</p>
+<p>我发现有一个问题：老外经常喜欢在书里写一些无关紧要的垃圾话，如果是读中文书的话，我可以一秒扫过十行，知道这些信息没用然后就跳过去，但是我读英文我就必须一行一行的读过去，有时候还要查查字典，效率就很低。。。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-我的日记/2020年/2020-06-06" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/">我的日记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/">2020年</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/diary/" rel="tag">diary</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-06-06/">
+            <time datetime="2020-06-06T15:00:00.000Z" itemprop="datePublished">2020-06-06</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-06-06/">Sat Jun 06 2020 00:00:00 GMT+0800 (China Standard Time)</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="2020-06-06"><a href="#2020-06-06" class="headerlink" title="2020-06-06"></a>2020-06-06</h1><h2 id="Caroline-Konstnar"><a href="#Caroline-Konstnar" class="headerlink" title="Caroline Konstnar"></a>Caroline Konstnar</h2><p>今天才知道她主业居然是跳芭蕾的，反差好大啊。。。</p>
+<p>她脱口秀都挺好看的，推荐大家看看，就是有时候语速太快听不懂，还有粗口稍微有点太多了一点，特别是性方面的粗口.</p>
+<p>还不太适应女生讲荤话。。。</p>
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gfif1ztl4hj30u0169wl4.jpg" alt="Screen Shot 2020-06-06 at 11.36.04 AM" style="zoom:33%;" />
+
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-06-06/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-我的日记/2020年/2020-06-05" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/">我的日记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/">2020年</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/diary/" rel="tag">diary</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-06-05/">
+            <time datetime="2020-06-05T15:00:00.000Z" itemprop="datePublished">2020-06-05</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-06-05/">Fri Jun 05 2020 00:00:00 GMT+0800 (China Standard Time)</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="2020-06-05"><a href="#2020-06-05" class="headerlink" title="2020-06-05"></a>2020-06-05</h1><h2 id="一个梦"><a href="#一个梦" class="headerlink" title="一个梦"></a>一个梦</h2><p>给一个姑娘讲《饥荒政治》里的事情，她却一直在笑。</p>
+<p>她翻到书最后面，指着页面上给B站拍的后浪广告（上面是 十音、党妹，还有几个名up 我不记得了），问：是她们漂亮还是我漂亮？</p>
+<p>我反正做了一个非常糟糕的敷衍的回答，但我的回答的一瞬间又想到了一个土味情话，可是我没有机会把它说出来。</p>
+<p>醒来后，我忽然意识到我可能B战看的太多了，那上面的up 她一定全部都不认识，可能她从来没看过B站。这样我们就很难有共鸣，不过现代女孩儿平常看什么呢？电视剧吗？</p>
+<h2 id="SpaceX-龙飞船中的新触控交互操作系统，意味着什么？"><a href="#SpaceX-龙飞船中的新触控交互操作系统，意味着什么？" class="headerlink" title="SpaceX 龙飞船中的新触控交互操作系统，意味着什么？"></a>SpaceX 龙飞船中的新触控交互操作系统，意味着什么？</h2><p>有一个答案很有意思。</p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-06-05/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-我的日记/2020年/2020-06-04" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1006,281 +1281,8 @@
 
 
     
-        <article id="post-我的日记/2020年/2020-05-28" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/">我的日记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/">2020年</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/diary/" rel="tag">diary</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-28/">
-            <time datetime="2020-05-28T15:00:00.000Z" itemprop="datePublished">2020-05-28</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-28/">Thu May 28 2020 00:00:00 GMT+0800 (China Standard Time)</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h1 id="2020-05-28"><a href="#2020-05-28" class="headerlink" title="2020-05-28"></a>2020-05-28</h1><h2 id="一个梦"><a href="#一个梦" class="headerlink" title="一个梦"></a>一个梦</h2><p>我被一种神奇的力量拽着飞，就像坐过山车一样（虽然我在现实中从来没有坐过过山车）当然这种过山车非常夸张，我几乎在整个宇宙间来回穿梭，先是被忽然跑到土星轨道上，然后再被抛回地球阿尔卑斯山脉，然后又被抛到太阳旁边，就在这样一种无序的轨道上互相乱转。很奇怪的是，在梦里我居然有重力的体验，当然这是一种微弱的虚假的重力体验，否则我早就该吐了。</p>
-<h2 id="Clearview"><a href="#Clearview" class="headerlink" title="Clearview"></a>Clearview</h2><p>吹爆，目前mac系统下最完美的epub 阅读体验。</p>
-<p>自带的图书复制文本会有版权标签，打开速度缓慢，而且会备份一个本地库，非常累赘，文本不能无限放大。</p>
-<p>老牌通用平台caliber界面奇丑无比，运行缓慢，目前只被我用来当作转换器使用。</p>
-<p>这个不仅界面简洁，打开速度快，可以无限放大，最重要的是他的检索速度超级快！因为我其实不在电脑上看书，我一般是放在E-ink 平板上看。然后有的时候需要查找记录一些东西就要回电脑上快速定位，图书其实也不慢，但是要1~2秒吧，这个东西几乎是瞬间。</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-28/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-我的日记/2020年/2020-05-27" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/">我的日记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/">2020年</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/diary/" rel="tag">diary</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-27/">
-            <time datetime="2020-05-27T15:00:00.000Z" itemprop="datePublished">2020-05-27</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-27/">Wed May 27 2020 00:00:00 GMT+0800 (China Standard Time)</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h1 id="2020-05-27"><a href="#2020-05-27" class="headerlink" title="2020-05-27"></a>2020-05-27</h1><h2 id="整理"><a href="#整理" class="headerlink" title="整理"></a>整理</h2><p>最近重看薛定谔的《生命是什么》，如果说生命从有序走向无序的过程是必然的，那么我的印象笔记也是这样。</p>
-<p>早上在收藏一篇文章的时候，我实在无法容忍这种杂乱无序的分类状态（几乎所有文章都堆积在摘抄和swift下面，因为那是两个自动分类的默认笔记本。）就决心做了一下分类。</p>
-<p>顺带回顾了一下，发现很多有趣的文章堆积在历史的垃圾堆桶里面，根本就没有看过。而很多看过的非常有趣的文章已经忘记了。</p>
-<p>当然还有很多毫无用处又不是很有趣的文章，大概删了50多条。</p>
-<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gf6rm3avg2j30au0xwwsv.jpg" alt="Screen Shot 2020-05-27 at 9.38.36 AM" style="zoom: 33%;" />
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-27/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-我的日记/2020年/2020-05-26" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/">我的日记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/">2020年</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/diary/" rel="tag">diary</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-26/">
-            <time datetime="2020-05-26T15:00:00.000Z" itemprop="datePublished">2020-05-26</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-26/">Tue May 26 2020 00:00:00 GMT+0800 (China Standard Time)</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h1 id="2020-05-26"><a href="#2020-05-26" class="headerlink" title="2020-05-26"></a>2020-05-26</h1><h2 id="一个梦"><a href="#一个梦" class="headerlink" title="一个梦"></a>一个梦</h2><p>一个极小的沙滩，在一座酒店的废墟后面，不断有浮空在水面上的帆船高速掠过。</p>
-<p>在床上吃小龙虾，油泼满一床单。</p>
-<p>很罕见，我之前做梦吃东西从来没有吃成功的，这次居然实实在在地吃到了嘴边，醒来还在回顾小龙虾的味道。</p>
-<h2 id="如何看待南京邮电大学教授桂冠三年半时间发表300多篇IEEE论文？-amp-如何看待曾经冒充北大学生，保研资格被清华取消的黄同学2020申请到加州理工EE系唯一一个大陆PhD？"><a href="#如何看待南京邮电大学教授桂冠三年半时间发表300多篇IEEE论文？-amp-如何看待曾经冒充北大学生，保研资格被清华取消的黄同学2020申请到加州理工EE系唯一一个大陆PhD？" class="headerlink" title="如何看待南京邮电大学教授桂冠三年半时间发表300多篇IEEE论文？&amp; 如何看待曾经冒充北大学生，保研资格被清华取消的黄同学2020申请到加州理工EE系唯一一个大陆PhD？"></a>如何看待南京邮电大学教授桂冠三年半时间发表300多篇IEEE论文？&amp; 如何看待曾经冒充北大学生，保研资格被清华取消的黄同学2020申请到加州理工EE系唯一一个大陆PhD？</h2><p>其实大家就是酸的慌，你想想看中美科研差距这么大，结果我们发的论文世界第一多，怎么来的？还不就是桂教授这样的大水泵灌出来的？最不要脸的是官媒天天在吹我国论文投稿数量世界第一巴拉巴拉，不害臊？</p>
-<p>话说能投这么多也是个人才，就算是全让学生写都够累的。</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/%E6%88%91%E7%9A%84%E6%97%A5%E8%AE%B0/2020%E5%B9%B4/2020-05-26/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
         <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/30/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="page-number" href="/page/30/">30</a><span class="page-number current">31</span><a class="page-number" href="/page/32/">32</a><a class="page-number" href="/page/33/">33</a><span class="space">&hellip;</span><a class="page-number" href="/page/39/">39</a><a class="extend next" rel="next" href="/page/32/">Next &amp;raquo;</a>
+        <a class="extend prev" rel="prev" href="/page/30/">&amp;laquo; Anterior</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="page-number" href="/page/30/">30</a><span class="page-number current">31</span><a class="page-number" href="/page/32/">32</a><a class="page-number" href="/page/33/">33</a><span class="space">&hellip;</span><a class="page-number" href="/page/39/">39</a><a class="extend next" rel="next" href="/page/32/">Siguiente  &amp;raquo;</a>
         </nav>
     
 </section>
